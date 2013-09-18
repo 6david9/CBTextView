@@ -19,6 +19,7 @@
     [super viewDidLoad];
     
     _textView = [[CBTextView alloc] initWithFrame:CGRectMake(0, 0, 320, 100)];
+    _textView.placeHolder = @"I'm CBTextView!";
     _aButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
     _aButton.frame = CGRectMake(122, 152, 76, 44);
     [_aButton addTarget:self action:@selector(hideKeyboard:) forControlEvents:UIControlEventTouchUpInside];

@@ -53,8 +53,6 @@
     self.textView.backgroundColor = DEBUG_VIEW_ITEM_COLOR;
     self.backgroundColor = DEBUG_VIEW_CONTAINER_COLOR;
 #endif
-    
-    self.placeHolder = @"快来制冷吧，小伙伴们都等不及了！";
 }
 
 #pragma mark - Layout
