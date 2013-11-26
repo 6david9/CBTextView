@@ -18,25 +18,19 @@
 {
     [super viewDidLoad];
     
-    _textView = [[CBTextView alloc] initWithFrame:CGRectMake(0, 0, 320, 100)];
-    _textView.placeHolder = @"I'm CBTextView!";
-    _aButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-    _aButton.frame = CGRectMake(122, 152, 76, 44);
-    [_aButton addTarget:self action:@selector(hideKeyboard:) forControlEvents:UIControlEventTouchUpInside];
-    
-    [self.view addSubview:_textView];
-    [self.view addSubview:_aButton];
+    self.textView.placeholder = @"快来说点什么";
+    self.textView.placeholderColor = [UIColor redColor];
+    self.textView.textAlignment = NSTextAlignmentCenter;
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
-- (void)hideKeyboard:(id)sender
+- (IBAction)finish:(id)sender
 {
     [self.textView resignFirstResponder];
+}
+
+- (IBAction)clear:(id)sender
+{
+    self.textView.text = nil;
 }
 
 @end

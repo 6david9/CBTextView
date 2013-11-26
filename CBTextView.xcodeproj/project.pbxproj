@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		082741791844886900EC77AD /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 082741781844886900EC77AD /* XCTest.framework */; };
+		0827417A1844886900EC77AD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 082AA2F517E99708006D1053 /* Foundation.framework */; };
+		0827417B1844886900EC77AD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 082AA2F317E99708006D1053 /* UIKit.framework */; };
+		082741811844886900EC77AD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0827417F1844886900EC77AD /* InfoPlist.strings */; };
+		082741831844886900EC77AD /* CBTextViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 082741821844886900EC77AD /* CBTextViewTests.m */; };
+		0827418A1844894600EC77AD /* CBTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 082AA31817E9972C006D1053 /* CBTextView.m */; };
 		082AA2F417E99708006D1053 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 082AA2F317E99708006D1053 /* UIKit.framework */; };
 		082AA2F617E99708006D1053 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 082AA2F517E99708006D1053 /* Foundation.framework */; };
 		082AA2F817E99708006D1053 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 082AA2F717E99708006D1053 /* CoreGraphics.framework */; };
@@ -21,7 +27,23 @@
 		082AA31917E9972C006D1053 /* CBTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 082AA31817E9972C006D1053 /* CBTextView.m */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		082741851844886900EC77AD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 082AA2E817E99708006D1053 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 082AA2EF17E99708006D1053;
+			remoteInfo = CBTextView;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		082741771844886900EC77AD /* CBTextViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CBTextViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		082741781844886900EC77AD /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		0827417E1844886900EC77AD /* CBTextViewTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CBTextViewTests-Info.plist"; sourceTree = "<group>"; };
+		082741801844886900EC77AD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		082741821844886900EC77AD /* CBTextViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CBTextViewTests.m; sourceTree = "<group>"; };
+		082741841844886900EC77AD /* CBTextViewTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CBTextViewTests-Prefix.pch"; sourceTree = "<group>"; };
 		082AA2F017E99708006D1053 /* CBTextView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CBTextView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		082AA2F317E99708006D1053 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		082AA2F517E99708006D1053 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -43,6 +65,16 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		082741741844886900EC77AD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				082741791844886900EC77AD /* XCTest.framework in Frameworks */,
+				0827417B1844886900EC77AD /* UIKit.framework in Frameworks */,
+				0827417A1844886900EC77AD /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		082AA2ED17E99708006D1053 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -56,10 +88,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0827417C1844886900EC77AD /* CBTextViewTests */ = {
+			isa = PBXGroup;
+			children = (
+				082741821844886900EC77AD /* CBTextViewTests.m */,
+				0827417D1844886900EC77AD /* Supporting Files */,
+			);
+			path = CBTextViewTests;
+			sourceTree = "<group>";
+		};
+		0827417D1844886900EC77AD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0827417E1844886900EC77AD /* CBTextViewTests-Info.plist */,
+				0827417F1844886900EC77AD /* InfoPlist.strings */,
+				082741841844886900EC77AD /* CBTextViewTests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		082AA2E717E99708006D1053 = {
 			isa = PBXGroup;
 			children = (
 				082AA2F917E99708006D1053 /* CBTextView */,
+				0827417C1844886900EC77AD /* CBTextViewTests */,
 				082AA2F217E99708006D1053 /* Frameworks */,
 				082AA2F117E99708006D1053 /* Products */,
 			);
@@ -69,6 +121,7 @@
 			isa = PBXGroup;
 			children = (
 				082AA2F017E99708006D1053 /* CBTextView.app */,
+				082741771844886900EC77AD /* CBTextViewTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -79,6 +132,7 @@
 				082AA2F317E99708006D1053 /* UIKit.framework */,
 				082AA2F517E99708006D1053 /* Foundation.framework */,
 				082AA2F717E99708006D1053 /* CoreGraphics.framework */,
+				082741781844886900EC77AD /* XCTest.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -123,6 +177,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		082741761844886900EC77AD /* CBTextViewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 082741891844886900EC77AD /* Build configuration list for PBXNativeTarget "CBTextViewTests" */;
+			buildPhases = (
+				082741731844886900EC77AD /* Sources */,
+				082741741844886900EC77AD /* Frameworks */,
+				082741751844886900EC77AD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				082741861844886900EC77AD /* PBXTargetDependency */,
+			);
+			name = CBTextViewTests;
+			productName = CBTextViewTests;
+			productReference = 082741771844886900EC77AD /* CBTextViewTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		082AA2EF17E99708006D1053 /* CBTextView */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 082AA31317E99708006D1053 /* Build configuration list for PBXNativeTarget "CBTextView" */;
@@ -149,6 +221,11 @@
 				CLASSPREFIX = CB;
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = ly;
+				TargetAttributes = {
+					082741761844886900EC77AD = {
+						TestTargetID = 082AA2EF17E99708006D1053;
+					};
+				};
 			};
 			buildConfigurationList = 082AA2EB17E99708006D1053 /* Build configuration list for PBXProject "CBTextView" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -163,11 +240,20 @@
 			projectRoot = "";
 			targets = (
 				082AA2EF17E99708006D1053 /* CBTextView */,
+				082741761844886900EC77AD /* CBTextViewTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		082741751844886900EC77AD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				082741811844886900EC77AD /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		082AA2EE17E99708006D1053 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -183,6 +269,15 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		082741731844886900EC77AD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0827418A1844894600EC77AD /* CBTextView.m in Sources */,
+				082741831844886900EC77AD /* CBTextViewTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		082AA2EC17E99708006D1053 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -196,7 +291,23 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		082741861844886900EC77AD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 082AA2EF17E99708006D1053 /* CBTextView */;
+			targetProxy = 082741851844886900EC77AD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
+		0827417F1844886900EC77AD /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				082741801844886900EC77AD /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
 		082AA2FC17E99708006D1053 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -216,6 +327,67 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		082741871844886900EC77AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CBTextView.app/CBTextView";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CBTextViewTests/CBTextViewTests-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = "CBTextViewTests/CBTextViewTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		082741881844886900EC77AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CBTextView.app/CBTextView";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				ENABLE_NS_ASSERTIONS = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CBTextViewTests/CBTextViewTests-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = "CBTextViewTests/CBTextViewTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
 		082AA31117E99708006D1053 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -297,6 +469,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		082741891844886900EC77AD /* Build configuration list for PBXNativeTarget "CBTextViewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				082741871844886900EC77AD /* Debug */,
+				082741881844886900EC77AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		082AA2EB17E99708006D1053 /* Build configuration list for PBXProject "CBTextView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -313,6 +493,7 @@
 				082AA31517E99708006D1053 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

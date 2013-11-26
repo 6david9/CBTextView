@@ -8,18 +8,25 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CBTextView : UIView
-{
-    UIColor *defaultTextColor;
-    NSString *prevText;
-}
+@interface CBTextView : UITextView
 
-@property (strong, nonatomic) UITextView *textView;
+/** 没有用户输入的文字时的占位文字 */
+@property (strong, nonatomic) NSString *placeholder;
 
-@property (strong, nonatomic) NSString *placeHolder;
+/** 占位文字的颜色 */
+@property (strong, nonatomic) UIColor *placeholderColor;
 
-@property (strong, nonatomic) UIColor *placeHolderColor;
+/** 编辑开始时调用此方法
+ * 如果你清楚次方法的原理，不要直接调用此方法
+ */
+- (void)beginEditing;
 
-@property (weak, nonatomic) id<UITextViewDelegate> aDelegate;
+/** 编辑已经结束后调用此方法
+ * 如果你清楚次方法的原理，不要直接调用此方法
+ */
+- (void)endEditing;
+
+/** 编辑框中的实际的文字 包括 placeholder */
+- (NSString *)realText;
 
 @end

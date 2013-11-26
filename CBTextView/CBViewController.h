@@ -11,8 +11,6 @@
 
 @interface CBViewController : UIViewController
 
-@property (strong, nonatomic) CBTextView *textView;
-
-@property (strong, nonatomic) UIButton *aButton;
+@property (weak, nonatomic) IBOutlet CBTextView *textView;
 
 @end
