@@ -47,6 +47,7 @@
 {
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(beginEditing) name:UITextViewTextDidBeginEditingNotification object:self];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(endEditing) name:UITextViewTextDidEndEditingNotification  object:self];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(textDidChanged) name:UITextViewTextDidChangeNotification object:self];
     
     self.userTextColor = [UIColor blackColor];
     self.placeholderColor = [UIColor grayColor];
@@ -92,10 +93,6 @@
 
 - (void)endEditing
 {
-    if ([self.textColor isEqual:self.userTextColor]) {
-        self.userText = [super text];
-    }
-    
     if (![self.userText isEqualToString:@""] && self.userText!=nil)
     {
         [super setText:self.userText];
@@ -106,6 +103,11 @@
         [super setText:self.placeholder];
         self.textColor = self.placeholderColor;
     }
+}
+
+- (void)textDidChanged
+{
+    self.userText = [super text];
 }
 
 #pragma mark - Setter / Getter

@@ -16,17 +16,17 @@
 /** 占位文字的颜色 */
 @property (strong, nonatomic) UIColor *placeholderColor;
 
+/** 编辑框中的实际的文字 包括 placeholder */
+- (NSString *)realText;
+
 /** 编辑开始时调用此方法
- * 如果你清楚次方法的原理，不要直接调用此方法
+ * 如果你清楚此方法的原理，不要直接调用此方法
  */
 - (void)beginEditing;
 
 /** 编辑已经结束后调用此方法
- * 如果你清楚次方法的原理，不要直接调用此方法
+ * 如果你清楚此方法的原理，不要直接调用此方法
  */
 - (void)endEditing;
-
-/** 编辑框中的实际的文字 包括 placeholder */
-- (NSString *)realText;
 
 @end
